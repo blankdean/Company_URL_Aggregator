@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Install openpyxl using pip3
-pip3 install openpyxl
+# Install openpyxl
+python3 -m pip install openpyxl
 
-# Install google-search using pip3
-pip3 install google
-pip3 install google-search
+# Install google
+python3 -m pip install google
