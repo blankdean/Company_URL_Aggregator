@@ -14,13 +14,12 @@ for row in range(2, sheet.max_row + 1):
     
     # If the company URL is not already filled in
     if not company_url:
-        print(company_name)
-
         # Do a Google search for the company name
         # Docs: https://python-googlesearch.readthedocs.io/en/latest/
         for url in search(query=company_name, num=1, stop=1, pause=2):
             company_url = url
         
+        print(company_name)
         print(f"Populating {excel_file} at row {row}: {company_url}")
         print('----------')
 
