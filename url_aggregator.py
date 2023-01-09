@@ -14,6 +14,7 @@ for row in range(2, sheet.max_row + 1):
     
     # If the company URL is not already filled in
     if not company_url:
+        
         # Do a Google search for the company name
         # Docs: https://python-googlesearch.readthedocs.io/en/latest/
         for url in search(query=company_name, num=1, stop=1, pause=2):
