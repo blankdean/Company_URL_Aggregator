@@ -43,6 +43,8 @@ if __name__=="__main__":
         # save if modified even if it fails
         print(f"Saving {len(urls)} urls to {excel_file}")
         wb.save(excel_file)
+    else:
+        print("No urls fetched. Excel workbook has all urls populated.")
 
     wb.close()
     input("Press Enter to exit...")
