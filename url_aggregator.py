@@ -19,7 +19,7 @@ def fill_urls(excel_file):
             
             # Do a Google search for the company name
             # Docs: https://python-googlesearch.readthedocs.io/en/latest/
-            for url in search(query=company_name, num=1, stop=1, pause=2):
+            for url in search(query=bytes(company_name, 'utf-8'), num=1, stop=1, pause=2):
                 company_url = url
             
             print(company_name)
